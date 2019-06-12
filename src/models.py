@@ -64,6 +64,9 @@ class LeNet(nn.Module):
             num_features *= s
         return num_features
 
+    @property
+    def name(self):
+        return "LeNet"
 
 if __name__ == "__main__":
 
